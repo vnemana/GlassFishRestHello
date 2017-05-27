@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet>
+        <servlet-name>Namaste</servlet-name>
+        <servlet-class>com.mahesh.learn.Namaste</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CreateUserHandler</servlet-name>
+        <servlet-class>com.mahesh.learn.CreateUserHandler</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetAllUsersHandler</servlet-name>
+        <servlet-class>com.mahesh.learn.GetAllUsersHandler</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Namaste</servlet-name>
+        <url-pattern>/namaste</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CreateUserHandler</servlet-name>
+        <url-pattern>/createuserhandler</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetAllUsersHandler</servlet-name>
+        <url-pattern>/getallusershandler</url-pattern>
+    </servlet-mapping>
+</web-app>
